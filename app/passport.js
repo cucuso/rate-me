@@ -48,9 +48,10 @@ module.exports = function(passport) {
                       var newUser = new User();
 
                       // set the user's local credentials
-                      newUser.instagram_id    = profile.id;
+                      newUser.instagramId    = profile.id;
                       newUser.name = profile.full_name;
                       newUser.username = profile.username;
+                      newUser.accessToken = accessToken;
                       // save the user
                       newUser.save(function(err) {
                           if (err)
