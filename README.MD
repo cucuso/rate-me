@@ -4,7 +4,6 @@
 
 Find out once and for all what you are from 1 to 10. 
 
-![](http://i.imgur.com/ghmJLUP.gif)
 
 ## Features
 
