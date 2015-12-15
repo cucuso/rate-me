@@ -1,0 +1,20 @@
+{
+  "name": "rateme",
+  "version": "0.0.0",
+  "description": "Simple todo application.",
+  "main": "server.js",
+  "author": "THE ANGULAR SQUADULAR",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "~1.5.2",
+    "connect-flash": "~0.1.1",
+    "ejs": "^1.0.0",
+    "express": "~4.7.2",
+    "express-session": "^1.12.1",
+    "method-override": "~2.1.2",
+    "mongoose": "~3.6.2",
+    "morgan": "~1.2.2",
+    "passport-instagram": "^1.0.0",
+    "passport-local": "^0.1.6"
+  }
+}
