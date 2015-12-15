@@ -1,4 +1,4 @@
-![](http://i.imgur.com/y8g506n.png?1)
+![](http://www.quickmeme.com/img/60/607ce9b85bc8e4b08dec438b94aecb00d5198dc3c2ea0d13434bc82468c5f2b1.jpg)
 
 # Rate Me
 
