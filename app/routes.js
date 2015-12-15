@@ -60,16 +60,15 @@ module.exports = function(app, passport) {
     res.send(req.isAuthenticated()?req.user:'0');
   });
 
-  // process the signup form
-  app.post('/signup', passport.authenticate('local-signup', {
-    successRedirect: '/loginSuccess',
-    failureRedirect: '/loginFailure'
-  }));
+  app.get('/auth/instagram',
+      passport.authenticate('instagram'));
 
-
-  app.post('/login', passport.authenticate('local-login'),function(req,res){
-    res.render('index', {user:JSON.stringify(req.user)}); // load the single view file (angular will handle the page changes on the front-end)
-  });
+  app.get('/auth/instagram/callback',
+      passport.authenticate('instagram', { failureRedirect: '/main' }),
+      function(req, res) {
+        // Successful authentication, redirect home.
+        res.redirect('/');
+      });
 
   app.post('/logout',function(req,res){
     req.logout();
